@@ -7,6 +7,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import VisionAssessmentHome from './src/screens/VisionAssessments/VisionAssessmentsHome';
 import VisionAcuityInfo from './src/screens/VisionAssessments/VisionAcuityInfo';
 import VisionAcuityTest from './src/screens/VisionAssessments/VisionAcuityTest';
+import ColorBlindInfo from './src/screens/VisionAssessments/ColorBlindInfo';
+
 const Stack = createNativeStackNavigator();
 
 function App() {
@@ -18,6 +20,7 @@ function App() {
           <Stack.Screen name="VisionAssessmentsHome" component={VisionAssessmentHome} options={{ title: "Vision Assessments" }}/>
           <Stack.Screen name="VisionAcuityInfo" component={VisionAcuityInfo} options={{ title: "Vision Acuity Test" }}/>
           <Stack.Screen name="VisionAcuityTest" component={VisionAcuityTest} options={{ title: "Vision Acuity Test" }}/>
+          <Stack.Screen name="ColorBlindInfo" component={ColorBlindInfo} options={{ title: "Color Blind Test" }}/>
         </Stack.Navigator>
       </NavigationContainer>
     )
