@@ -12,6 +12,7 @@ import ColorBlindTest from './src/screens/VisionAssessments/ColorBlindTest';
 import ContrastSensitivityInfo from './src/screens/VisionAssessments/ContrastSensitivityInfo';
 import ContrastSensitivityTest from './src/screens/VisionAssessments/ContrastSensitivityTest';
 import AstigmatismInfo from './src/screens/VisionAssessments/AstigmatismInfo';
+import AstigmatismTest from './src/screens/VisionAssessments/AstigmatismTest';          
 
 const Stack = createNativeStackNavigator();
 
@@ -29,6 +30,7 @@ function App() {
           <Stack.Screen name="ContrastSensitivityInfo" component={ContrastSensitivityInfo} options={{ title: "Contrast Sensitivity Test" }}/>
           <Stack.Screen name="ContrastSensitivityTest" component={ContrastSensitivityTest} options={{ title: "Contrast Sensitivity Test" }}/>
           <Stack.Screen name="AstigmatismInfo" component={AstigmatismInfo} options={{ title: "Astigmatism Test" }}/>
+          <Stack.Screen name="AstigmatismTest" component={AstigmatismTest} options={{ title: "Astigmatism Test" }}/>
         </Stack.Navigator>
       </NavigationContainer>
     )
