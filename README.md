@@ -30,11 +30,11 @@ The Vision Assessment App is a mobile application developed in React Native that
    ```bash
    npm install
    ```
-5. Run the app (for Android):
+4. Run the app (for Android):
    ```bash
    npx react-native run-android
   ```
-6. Run the app (for IOS):
+5. Run the app (for IOS):
   ```bash
   npx react-native run-ios
   ```
