@@ -7,8 +7,6 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import VisionAssessmentHome from './src/screens/VisionAssessments/VisionAssessmentsHome';
 
 
-
-
 const Stack = createNativeStackNavigator();
 
 function App() {
