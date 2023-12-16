@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, Image, Button, Alert, TouchableOpacity } from 'react-native';
+import { View, Text, Image, Alert, TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/AntDesign';
 
 const AstigmatismTestScreen = () => {
@@ -89,7 +89,7 @@ const AstigmatismTestScreen = () => {
     const renderResults = () => {
         const pass = answers.every((answer, index) => answer === shuffledImages[index].answer);
         return (
-            <View>
+            <View style={{backgroundColor: 'white'}} >
                 <Text style={{ fontWeight: 'bold', fontSize: 24, marginBottom: 20, marginTop: 20 }}>Test Results</Text>
                 {pass ? (
                     <View style={{ flexDirection: 'row', alignItems: 'center', color: 'green' }}>

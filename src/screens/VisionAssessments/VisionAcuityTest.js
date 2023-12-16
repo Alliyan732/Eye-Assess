@@ -1,47 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, StyleSheet, Image, TouchableOpacity, Alert } from 'react-native';
-import { black } from 'react-native-paper/lib/typescript/src/styles/themes/v2/colors';
 import Icon from 'react-native-vector-icons/AntDesign';
 const TumblingETestScreen = () => {
     const [currentMoveIndex, setCurrentMoveIndex] = useState(0);
     const [results, setResults] = useState([]);
     const [moves, setMoves] = useState([]);
-    let status;
-    const baseURL = 'http://localhost:3000';
-
-
-    // to save results
-    // const submitVisionAssessmentResult = async () => {
-    //     const data = {
-    //       testType: "Vision Acuity Test",
-    //       status: status
-    //     };
-
-    //     try {
-    //       const accessToken = await localStorage.getItem('accessToken');
-    //       const response = await axios.post(`${baseURL}/users/submit_vision_assessment_result/`, data, {
-    //         headers: {
-    //           Authorization: `Bearer ${accessToken}`
-    //         }
-    //       });
-
-    //       console.log('Response:', response);
-    //       return response;
-    //     } catch (error) {
-    //       // Server is returning 403 for an expired token
-    //       if (error.response && error.response.status === 403) {
-    //         try {
-    //           console.log('Error Caught');
-    //           await reGenerateAccessToken();
-    //           return submitVisionAssessmentResult();
-    //         } catch (e) {
-    //           console.error('Error while refreshing token', e);
-    //           throw e;
-    //         }
-    //       }
-    //       throw error;
-    //     }
-    //   };
 
     useEffect(() => {
         generateMoves();
@@ -103,7 +66,7 @@ const TumblingETestScreen = () => {
         };
 
         return (
-            <View style={{ height: 80, width: 80, justifyContent: 'center', alignItems: 'center' }}>
+            <View style={{ height: 80, width: 80, justifyContent: 'center', alignItems: 'center'  }}>
                 <View style={rotationStyle}>
                     {/* Your content goes here */}
                     <Image source={require('../../assets/images/visionAssessments/E.png')} style={{ width: '100%', height: '100%' }} />
@@ -262,6 +225,7 @@ const styles = StyleSheet.create({
         padding: 20,
         justifyContent: 'center',
         alignItems: 'center',
+        backgroundColor: 'white'
     },
     header: {
         fontSize: 24,

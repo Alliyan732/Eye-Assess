@@ -4,7 +4,6 @@ import {
     Text,
     Image,
     TextInput,
-    Button,
     TouchableOpacity,
     FlatList,
     ScrollView,
@@ -15,44 +14,6 @@ import {
 import Icon from 'react-native-vector-icons/AntDesign';
 
 const ContrastSensitivityTestScreen = () => {
-    // const [status, setStatus] = useState(false);
-    // const baseURL = 'http://localhost:3000';
-
-    //   const submitVisionAssessmentResult = async () => {
-    //     const data = {
-    //       testType: 'Contrast Sensitivity Test',
-    //       status: status,
-    //     };
-
-    //     try {
-    //       const accessToken = await localStorage.getItem('accessToken');
-    //       const response = await axios.post(
-    //         `${baseURL}/users/submit_vision_assessment_result/`,
-    //         data,
-    //         {
-    //           headers: {
-    //             Authorization: `Bearer ${accessToken}`,
-    //           },
-    //         }
-    //       );
-
-    //       console.log('Response:', response);
-    //       return response;
-    //     } catch (error) {
-    //       // Server is returning 403 for an expired token
-    //       if (error.response && error.response.status === 403) {
-    //         try {
-    //           console.log('Error Caught');
-    //           await reGenerateAccessToken();
-    //           return submitVisionAssessmentResult();
-    //         } catch (e) {
-    //           console.error('Error while refreshing token', e);
-    //           throw e;
-    //         }
-    //       }
-    //       throw error;
-    //     }
-    //   };
 
     const imageLetters = [
         ['D', 'P', 'X', 'H', 'C', 'B'],
@@ -120,25 +81,6 @@ const ContrastSensitivityTestScreen = () => {
                             source={require('../../assets/images/visionAssessments/contrast-sensitivity-test.jpg')}
                             style={styles.testImage}
                         />
-                        {/* <View style={styles.imageChart}>
-                            {imageLetters.map((row, rowIndex) => (
-                                <View key={rowIndex} style={styles.imageChartRow}>
-                                {row.map((letter, columnIndex) => (
-                                    <Text
-                                    key={columnIndex}
-                                    style={[
-                                        styles.imageChartLetter,
-                                        currentLetterIndex === rowIndex * row.length + columnIndex
-                                        ? styles.activeLetter
-                                        : {},
-                                    ]}
-                                    >
-                                    {letter}
-                                    </Text>
-                                ))}
-                                </View>
-                            ))}
-                            </View> */}
                         <Text style={styles.enterLetterText}>Enter the letter you see in the image. (Capital Letters)</Text>
                         <TextInput
                             style={styles.textInput}
@@ -191,6 +133,7 @@ const styles = StyleSheet.create({
     container: {
         flexGrow: 1,
         padding: 16,
+        backgroundColor: 'white'
     },
     header: {
         alignItems: 'center',

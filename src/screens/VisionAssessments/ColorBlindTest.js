@@ -15,44 +15,8 @@ import Image9 from '../../assets/images/visionAssessments/colorblind-test-image9
 import Image10 from '../../assets/images/visionAssessments/colorblind-test-image10.webp';
 import Image11 from '../../assets/images/visionAssessments/colorblind-test-image11.webp';
 import Image12 from '../../assets/images/visionAssessments/colorblind-test-image12.webp';
-// Import other images similarly
 
 const ColorBlindTest = () => {
-  let status;
-  // const baseURL = 'http://localhost:3000';
-
-  // const submitVisionAssessmentResult = async () => {
-  //   // Your submitVisionAssessmentResult code remains the same
-  //   const data = {
-  //     testType: "Color Blind Test",
-  //     status: status
-  //   };
-
-  //   try {
-  //     const accessToken = await localStorage.getItem('accessToken');
-  //     const response = await axios.post(`${baseURL}/users/submit_vision_assessment_result/`, data, {
-  //       headers: {
-  //         Authorization: `Bearer ${accessToken}`
-  //       }
-  //     });
-
-  //     console.log('Response:', response);
-  //     return response;
-  //   } catch (error) {
-  //     // Server is returning 403 for an expired token
-  //     if (error.response && error.response.status === 403) {
-  //       try {
-  //         console.log('Error Caught');
-  //         await reGenerateAccessToken();
-  //         return submitVisionAssessmentResult();
-  //       } catch (e) {
-  //         console.error('Error while refreshing token', e);
-  //         throw e;
-  //       }
-  //     }
-  //     throw error;
-  //   }
-  // };
 
   const [images, setImages] = useState([
     { id: 1, src: Image1, number: 7 },

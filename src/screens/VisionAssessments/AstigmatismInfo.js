@@ -48,6 +48,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
+    backgroundColor: 'white'
   },
   text: {
     fontSize: 24,
@@ -68,7 +69,7 @@ const styles = StyleSheet.create({
   section2: {
     height: "50%",
     width: "90%",
-    backgroundColor: "#F5F5F5",
+    backgroundColor: 'white',
     borderRadius: 5,
     padding: 30
   },
