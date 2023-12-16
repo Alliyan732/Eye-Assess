@@ -9,6 +9,7 @@ import VisionAcuityInfo from './src/screens/VisionAssessments/VisionAcuityInfo';
 import VisionAcuityTest from './src/screens/VisionAssessments/VisionAcuityTest';
 import ColorBlindInfo from './src/screens/VisionAssessments/ColorBlindInfo';
 import ColorBlindTest from './src/screens/VisionAssessments/ColorBlindTest';
+import ContrastSensitivityInfo from './src/screens/VisionAssessments/ContrastSensitivityInfo';
 
 const Stack = createNativeStackNavigator();
 
@@ -23,6 +24,7 @@ function App() {
           <Stack.Screen name="VisionAcuityTest" component={VisionAcuityTest} options={{ title: "Vision Acuity Test" }}/>
           <Stack.Screen name="ColorBlindInfo" component={ColorBlindInfo} options={{ title: "Color Blind Test" }}/>
           <Stack.Screen name="ColorBlindTest" component={ColorBlindTest} options={{ title: "Color Blind Test" }}/>
+          <Stack.Screen name="ContrastSensitivityInfo" component={ContrastSensitivityInfo} options={{ title: "Contrast Sensitivity Test" }}/>
         </Stack.Navigator>
       </NavigationContainer>
     )
