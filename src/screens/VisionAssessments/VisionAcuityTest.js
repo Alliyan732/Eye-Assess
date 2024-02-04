@@ -59,16 +59,13 @@ const TumblingETestScreen = () => {
             transform: [{ rotate: `${getRotationValue(direction)}` }],
             width: arrowSize,
             height: arrowSize,
-            alignItems: 'center', // To center the rotated content
-            justifyContent: 'center', // To center the rotated content
-            // backgroundColor: 'black',
-            // padding: 
+            alignItems: 'center', 
+            justifyContent: 'center',
         };
 
         return (
             <View style={{ height: 80, width: 80, justifyContent: 'center', alignItems: 'center'  }}>
                 <View style={rotationStyle}>
-                    {/* Your content goes here */}
                     <Image source={require('../../assets/images/visionAssessments/E.png')} style={{ width: '100%', height: '100%' }} />
                 </View>
             </View>
@@ -262,13 +259,13 @@ const styles = StyleSheet.create({
     progressContainer: {
         width: '90%',
         alignSelf: 'center',
-        backgroundColor: '#ccc', // Add a background color to the container
-        borderRadius: 10, // Optional: add border radius to match your design
+        backgroundColor: '#ccc', 
+        borderRadius: 10,  
     },
     progressBar: {
         height: 10,
-        backgroundColor: '#374151', // Add a background color to the progress bar
-        borderRadius: 10, // Optional: add border radius to match your design
+        backgroundColor: '#374151',  
+        borderRadius: 10, 
     },
     resultsContainer: {
         flex: 1,
@@ -277,13 +274,13 @@ const styles = StyleSheet.create({
         width: '100%'
     },
     resultsTable: {
-        width: '100%', // Adjust the width as needed
+        width: '100%',  
         marginBottom: 20,
-        backgroundColor: 'white', // Set the background color to white or any other desired color
+        backgroundColor: 'white', 
         borderRadius: 10,
         borderWidth: 1,
         borderColor: '#ccc',
-        overflow: 'hidden', // Hide content that overflows the container
+        overflow: 'hidden',  
     },
     tableHeader: {
         flexDirection: 'row',

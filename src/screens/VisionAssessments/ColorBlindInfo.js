@@ -116,7 +116,6 @@ const styles = StyleSheet.create({
     width: 200,
     alignItems: 'center',
     justifyContent: 'center',
-    // Apply a linear gradient as the background
     background: 'linear-gradient(to right, #ff6b6b, #ffc4c4)',
   },
   buttonText: {
